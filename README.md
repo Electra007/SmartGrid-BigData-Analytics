@@ -9,7 +9,7 @@ This project applies **machine learning** and **big data analytics** to **foreca
 - ✅ Data preprocessing (missing value handling, datetime indexing)
 - ✅ Feature engineering (lag features, time-based features)
 - ✅ Train/test split with scikit-learn
-- ✅ Regression model training using Random Forest
+- ✅ Regression model training 
 - ✅ Error metrics: MAE, MSE, RMSE, R² Score
 - ✅ Visualizations for actual vs predicted load
 
