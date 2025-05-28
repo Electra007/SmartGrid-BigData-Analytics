@@ -1,1 +1,12 @@
 *.iml
+git add .gitignore
+git commit -m "Add .gitignore to exclude IDE-specific files"
+
+git rm -r --cached .idea
+git rm --cached *.iml
+git commit -m "Remove IDE-specific files from Git tracking"
+
+git push origin main
+
+.idea/
+*.iml
