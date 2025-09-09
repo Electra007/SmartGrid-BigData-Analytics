@@ -22,21 +22,12 @@ data = data.asfreq('h')  # lowercase 'h' to avoid deprecation warning
 data = data.ffill()  # forward-fill missing values
 print("Missing values handled.")
 
-# STEP 1: Add lag features
-data['Load_lag1'] = data['Load'].shift(1)
-data['Load_lag2'] = data['Load'].shift(2)
-data['Load_lag24'] = data['Load'].shift(24)
-
-# STEP 2: Add time-based features
-data['hour'] = data.index.hour
-data['dayofweek'] = data.index.dayofweek
-
 # Drop rows with NaN values (due to lagging)
 data = data.dropna()
 print("Feature engineering completed.")
 
 # Define features and target
-feature_cols = ['Load_lag1', 'Load_lag2', 'Load_lag24', 'hour', 'dayofweek']
+feature_cols = ['dayofweek', 'hour']
 X = data[feature_cols]
 y = data['Load']
 
