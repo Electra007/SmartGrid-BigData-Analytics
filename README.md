@@ -1,6 +1,6 @@
 # ⚡ SmartGrid-BigData-Analytics
 
-This project applies **machine learning** and **big data analytics** to **forecast power load in a smart grid** environment. It uses historical time-series data to train predictive models, enabling energy providers to anticipate demand more accurately and optimize grid performance.
+This project applies **machine learning** and **data analytics** to **forecast power load in a smart grid** environment. It uses historical time-series data to train predictive models, enabling energy providers to anticipate demand more accurately and optimize grid performance.
 
 ---
 
@@ -39,5 +39,6 @@ pip install -r requirements.txt
 
 # 4. Run the forecasting script
 python src/load_forecasting.py
+
 
 
