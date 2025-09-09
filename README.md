@@ -7,7 +7,6 @@ This project applies **machine learning** and **big data analytics** to **foreca
 ## 📊 Project Features
 
 - ✅ Data preprocessing (missing value handling, datetime indexing)
-- ✅ Feature engineering (lag features, time-based features)
 - ✅ Train/test split with scikit-learn
 - ✅ Regression model training 
 - ✅ Error metrics: MAE, MSE, RMSE, R² Score
@@ -42,3 +41,4 @@ pip install -r requirements.txt
 
 # 4. Run the forecasting script
 python src/load_forecasting.py
+
